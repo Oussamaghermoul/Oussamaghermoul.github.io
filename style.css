@@ -1,57 +1,43 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-header {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
+
+.calculator {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+
+#display {
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: right;
 }
-.subtitle {
-    font-size: 1.2rem;
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
 }
-.location {
-    font-style: italic;
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  background: #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
 }
-.container {
-    max-width: 800px;
-    margin: auto;
-}
-.about, .skills, .projects {
-    padding: 2rem 1rem;
-    max-width: 800px;
-    margin: auto;
-}
-.projects .project {
-    background: white;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-.socials a {
-    color: #ccc;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-.socials a:hover {
-    text-decoration: underline;
+
+button:hover {
+  background: #ccc;
 }
